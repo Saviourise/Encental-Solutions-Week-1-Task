@@ -858,7 +858,19 @@ footer span {
   nav#navBar > #button > button,
   footer > section:first-child button:last-child,
   footer > section.sec1 > div:last-child > button:first-child {
-    padding: 0px 20px;
+    padding: 0px 15px;
+  }
+
+  section#hero > article:first-child > button,
+  footer > section:first-child button:first-child,
+  nav#navBar > #button > button,
+  footer > section:first-child button:last-child {
+    font-size: 13px;
+  }
+
+  nav#navBar > #button > button > i,
+  footer > section:first-child button:last-child > i {
+    margin-left: 10px;
   }
 
   footer > section.sec2 {
@@ -895,6 +907,10 @@ footer span {
 
   .sec3 > p:first-child {
     width: 80%;
+  }
+
+  footer > section.sec1 > div:last-child > button:last-child {
+    margin-left: 15px;
   }
 }
 
