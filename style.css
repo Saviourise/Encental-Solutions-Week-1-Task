@@ -794,11 +794,13 @@ footer span {
 
   section#thirdSection > section > div > article > div > h2 {
     width: 100%;
+    font-size: 20px;
   }
 
   section#thirdSection > section > div > article > div > p {
-    font-size: 15px;
+    font-size: 12px;
     width: 100%;
+    font-weight: 900;
   }
 
   section#thirdSection > section > div {
@@ -812,11 +814,11 @@ footer span {
   }
 
   .child > div > p:last-child {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .cover > h2 {
-    font-size: 30px;
+    font-size: 25px;
     padding: 0px 20px;
   }
 
@@ -827,6 +829,10 @@ footer span {
 
   .show > div > p:last-child {
     width: 300px;
+    font-size: 12px;
+  }
+
+  .child > div > p:first-child {
     font-size: 15px;
   }
 
