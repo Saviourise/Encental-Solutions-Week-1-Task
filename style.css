@@ -113,7 +113,7 @@ footer > section:first-child button:last-child > i {
 
 section#hero {
   width: 100%;
-  min-height: 60rem;
+  min-height: 50rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
