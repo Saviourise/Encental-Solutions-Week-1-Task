@@ -113,7 +113,7 @@ footer > section:first-child button:last-child > i {
 
 section#hero {
   width: 100%;
-  min-height: 80vh;
+  min-height: 60rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -122,7 +122,6 @@ section#hero {
 
 section#hero > article:first-child {
   width: 40%;
-  height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -171,7 +170,7 @@ footer > section:first-child button:last-child:active {
 section#hero > article:last-child {
   background-image: url('https://raw.githubusercontent.com/Saviourise/Encental-Solutions-Week-1-Task/ad99af2e3603ec171efbc504e0740a5cf7a9fa5b/images/heroImg.svg');
   width: 60%;
-  height: 80vh;
+  height: 30rem;
   background-repeat: no-repeat;
   background-position: left center;
   background-size: contain;
@@ -179,7 +178,6 @@ section#hero > article:last-child {
 
 section#secondSection {
   width: 100%;
-  height: 90vh;
   display: grid;
   place-items: center;
 }
@@ -210,6 +208,10 @@ section#secondSection > article p {
 
 section#secondSection > article > div {
   width: 50%;
+}
+
+section#thirdSection {
+  margin: 50px 0px;
 }
 
 section#thirdSection > article:first-child {
@@ -531,7 +533,7 @@ footer > section.sec1 > div:last-child > button:first-child {
 }
 
 footer {
-  min-height: 100vh;
+  min-height: 50rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
