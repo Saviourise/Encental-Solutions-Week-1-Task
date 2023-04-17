@@ -165,7 +165,7 @@ footer > section:first-child button:first-child {
 section#hero > article:first-child > button:active,
 footer > section:first-child button:first-child:active,
 footer > section:first-child button:last-child:active {
-  transform: scale(0.9);
+  transform: scale(0.8);
 }
 
 section#hero > article:last-child {
