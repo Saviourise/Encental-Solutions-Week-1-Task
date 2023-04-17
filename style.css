@@ -141,7 +141,7 @@ section#hero > article:first-child > p {
   font-family: 'Avenir';
   margin-bottom: 60px;
   line-height: 160%;
-  max-width: 380px;
+  width: 400px;
 }
 
 section#hero > article:first-child > button,
