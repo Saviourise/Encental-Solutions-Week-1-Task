@@ -97,6 +97,7 @@ footer > section:first-child button:last-child {
   align-items: center;
   justify-content: space-evenly;
   height: 60px;
+  transform: scale(0.9);
 }
 
 nav#navBar > #button > button:active {
@@ -820,7 +821,6 @@ footer span {
 
   .child img {
     margin-right: 20px;
-    width: 50px;
     width: 50px;
   }
 
