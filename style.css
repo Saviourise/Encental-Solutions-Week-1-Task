@@ -691,6 +691,7 @@ footer span {
 
   section#hero > article:first-child > p {
     font-size: 15px;
+    width: 100%;
   }
 
   section#hero > article:first-child {
