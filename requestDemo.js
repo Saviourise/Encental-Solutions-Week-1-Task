@@ -108,7 +108,7 @@ const addInitialData = () => {
       price: "59000"
     }, {
       id: 2,
-      name: "Goole",
+      name: "Google",
       price: "67000"
     }, {
       id: 3,

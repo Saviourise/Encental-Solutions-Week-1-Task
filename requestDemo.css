@@ -7,8 +7,8 @@
   --dark-grey: #4b5d68;
 }
 
-@import url('https://fonts.cdnfonts.com/css/avenir');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.cdnfonts.com/css/avenir");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 body {
   margin: 0;
@@ -21,13 +21,11 @@ html {
   scroll-behavior: smooth;
 }
 
-
 main,
 nav,
 footer {
   padding: 20px 10%;
 }
-
 
 main {
   padding-top: 60px;
@@ -42,7 +40,7 @@ nav#navBar {
   left: 0;
   width: 100%;
   z-index: 1000;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .nav-colored {
@@ -58,7 +56,7 @@ nav#navBar {
   padding: 20px 0;
   z-index: 100;
   box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
-  transition: top .5s;
+  transition: top 0.5s;
 }
 
 nav#navBar > #logo,
@@ -93,23 +91,26 @@ nav#navBar > #links {
   align-items: center;
 }
 
-nav#navBar > #links li, #navBarRes > #links li {
+nav#navBar > #links li,
+#navBarRes > #links li {
   color: var(--grey);
   transition: all 0.3s;
   font-weight: 500;
   cursor: pointer;
-  font-family: 'Avenir', 'Poppins', 'Poppins';
+  font-family: "Avenir", "Poppins", "Poppins";
 }
 
 #navBarRes > #links li {
   margin: 15px 0;
 }
 
-nav#navBar > #links li.active, #navBarRes > #links li.active {
+nav#navBar > #links li.active,
+#navBarRes > #links li.active {
   color: var(--dark_blue);
 }
 
-nav#navBar > #links > li:hover, #navBarRes > #links li:hover {
+nav#navBar > #links > li:hover,
+#navBarRes > #links li:hover {
   color: var(--dark_blue);
 }
 
@@ -129,15 +130,16 @@ a {
 }
 
 #res > #menuBar {
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 nav#navBar > #button a,
-footer > section:first-child a:last-child, #navBarRes > #button a {
+footer > section:first-child a:last-child,
+#navBarRes > #button a {
   all: unset;
   font-weight: 500;
   cursor: pointer;
-  font-family: 'Avenir', 'Poppins';
+  font-family: "Avenir", "Poppins";
   color: var(--dark_blue);
   padding: 0px 30px;
   box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
@@ -151,15 +153,17 @@ footer > section:first-child a:last-child, #navBarRes > #button a {
 }
 
 #navBarRes > #button a {
-    width: 150px;
-    margin-left: 20px;
+  width: 150px;
+  margin-left: 20px;
 }
 
-nav#navBar > #button > a:active, #navBarRes > #button a:active {
+nav#navBar > #button > a:active,
+#navBarRes > #button a:active {
   margin-top: 5px;
 }
 
-nav#navBar > #button > a > i, #navBarRes > #button > a > i,
+nav#navBar > #button > a > i,
+#navBarRes > #button > a > i,
 footer > section:first-child a:last-child > i {
   color: var(--purple);
   margin-top: 5px;
@@ -170,7 +174,7 @@ ul {
   list-style-type: none;
 }
 
-section#tableSection  h1 {
+section#tableSection h1 {
   font-size: 35px;
   color: var(--dark_blue);
   font-family: Helvetica;
@@ -178,7 +182,7 @@ section#tableSection  h1 {
 }
 
 table {
-    font-family: 'Avenir', 'Poppins';
+  font-family: "Avenir", "Poppins";
 }
 
 #data {
@@ -186,19 +190,20 @@ table {
   width: 100%;
 }
 
-#data td, #data th {
+#data td,
+#data th {
   border: 1px solid #ddd;
   padding: 10px;
 }
 
-#data tr:nth-child(even){
-    background-color: rgba(156, 105, 226, 0.1);
+#data tr:nth-child(even) {
+  background-color: rgba(156, 105, 226, 0.1);
 }
 
 #data tr:hover {
-    background-color: var(--dark-grey);
-    color: white;
-    cursor: pointer;
+  background-color: var(--dark-grey);
+  color: white;
+  cursor: pointer;
 }
 
 #data th {
@@ -210,49 +215,50 @@ table {
 }
 
 form {
-    margin: 50px 0;
+  margin: 50px 0;
 }
 
 form fieldset {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 50px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 50px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
 }
 
-form input[type="text"], form input[type="number"]  {
-    flex: 1 0 130px;
-    border: 1px solid #ddd;
-    outline: none;
-    font-size: 1rem;
-    padding: 10px;
-    font-family: 'Avenir', 'Poppins';
-    border-radius: 5px;
+form input[type="text"],
+form input[type="number"] {
+  flex: 1 0 130px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 1rem;
+  padding: 10px;
+  font-family: "Avenir", "Poppins";
+  border-radius: 5px;
 }
 
 form input[type="submit"] {
-    flex: 1 0 40px;
-    border: 1px solid var(--purple);
-    outline: none;
-    font-size: 1rem;
-    background-color: var(--purple);
-    color: white;
-    padding: 10px;
-    font-family: 'Avenir', 'Poppins';
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all .3s;
+  flex: 1 0 40px;
+  border: 1px solid var(--purple);
+  outline: none;
+  font-size: 1rem;
+  background-color: var(--purple);
+  color: white;
+  padding: 10px;
+  font-family: "Avenir", "Poppins";
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 form input[type="submit"]:hover {
-    background-color: var(--dark_blue);
-    border-color: var(--dark_blue);
+  background-color: var(--dark_blue);
+  border-color: var(--dark_blue);
 }
 
 form input.typing:invalid {
-    border-color: red;
+  border-color: red;
 }
 
 @media only screen and (max-width: 800px) {
@@ -262,7 +268,7 @@ form input.typing:invalid {
     display: none;
   }
 
-  section#tableSection  h1 {
+  section#tableSection h1 {
     font-size: 25px;
     margin: 30px 0;
   }
@@ -285,11 +291,12 @@ form input.typing:invalid {
     justify-content: space-between;
   }
 
-  #data td, #data th {
+  #data td,
+  #data th {
     font-size: 12px;
   }
 
   form fieldset {
-    padding: 50px 35px;
+    padding: 20px 10px;
   }
 }
