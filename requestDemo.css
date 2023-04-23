@@ -301,7 +301,9 @@ form input.typing:invalid {
   }
 
   form input[type="text"],
-  form input[type="number"], legend {
+  form input[type="number"],
+  form input[type="submit"],
+  legend {
     font-size: 0.8rem;
   }
 }
