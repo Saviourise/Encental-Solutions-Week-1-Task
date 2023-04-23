@@ -99,7 +99,7 @@ const check = (self) => {
 };
 
 const addInitialData = () => {
-  localStorage.removeItem("dataStored");
+  // localStorage.removeItem("dataStored");
   const data = JSON.parse(localStorage.getItem("dataStored"));
   if (!data) {
     let arr = [
