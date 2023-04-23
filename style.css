@@ -543,9 +543,12 @@ section#thirdSection > section > div > article > div > button > i {
 }
 
 .dots > i:first-child {
+  margin-left: 70px;
+}
+
+.dots > i.active {
   color: var(--pink);
   font-size: 10px;
-  margin-left: 70px;
 }
 
 .hr {
@@ -850,12 +853,13 @@ footer span {
   }
 
   section#thirdSection > section > div > article {
-    width: 250px;
+    width: 150px;
   }
 
   section#thirdSection > section > div > article > div:first-child > img {
-    width: 150px;
-    top: 30%;
+    width: 125px;
+    top: 35%;
+    left: -5rem;
   }
 
   section#thirdSection > section > div > article > div:first-child {
@@ -864,16 +868,16 @@ footer span {
 
   section#thirdSection > section > div > article > div:last-child {
     width: 1000%;
-    height: 60%;
+    height: 40%;
   }
 
   section#thirdSection > section > div > article > div > h2 {
     width: 100%;
-    font-size: 20px;
+    font-size: 15px;
   }
 
   section#thirdSection > section > div > article > div > p {
-    font-size: 12px;
+    font-size: 10px;
     width: 100%;
     font-weight: 900;
   }
@@ -881,6 +885,10 @@ footer span {
   section#thirdSection > section > div {
     height: 200px;
     padding: 50px 0px;
+  }
+
+  section#thirdSection > section > div > article > div > button {
+    font-size: 12px;
   }
 
   .cover {
@@ -926,10 +934,7 @@ footer span {
   }
 
   .dots > i:first-child {
-    color: var(--pink);
-    font-size: 10px;
     margin-left: 20px;
-    margin-top: -4px;
   }
 
   footer > section.sec1 {
