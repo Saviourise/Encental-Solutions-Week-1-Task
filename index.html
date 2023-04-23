@@ -27,18 +27,32 @@
         <div></div>
       </div>
       <ul id="links">
-        <li>About</li>
-        <li>Help</li>
-        <li>Features</li>
-        <li>Signup</li>
+        <a href="#hero"><li class="link active" onclick="linkChange(this)">About</li></a>
+        <a href="#secondSection"><li class="link" onclick="linkChange(this)">Help</li></a>
+        <a href="#thirdSection"><li class="link" onclick="linkChange(this)">Features</li></a>
+        <a href="#cover"><li class="link" onclick="linkChange(this)">Signup</li></a>
       </ul>
       <div id="button">
-        <button>Request Demo <i class="fa fa-arrow-right"></i></button>
+        <a href="requestDemo.html"> Request Demo <i class="fa fa-arrow-right"></i></a>
+      </div>
+      <div id="res">
+        <i class="fa fa-bars" id="menuBar"></i>
+      </div>
+    </nav>
+    <nav id="navBarRes">
+      <ul id="links">
+        <a href="#hero"><li class="link active" onclick="linkChange(this)">About</li></a>
+        <a href="#secondSection"><li class="link" onclick="linkChange(this)">Help</li></a>
+        <a href="#thirdSection"><li class="link" onclick="linkChange(this)">Features</li></a>
+        <a href="#cover"><li class="link" onclick="linkChange(this)">Signup</li></a>
+      </ul>
+      <div id="button">
+        <a href="requestDemo.html"> Request Demo <i class="fa fa-arrow-right"></i></a>
       </div>
     </nav>
     <!-- Nav Bar End -->
 
-    <!-- Main COntent Start -->
+    <!-- Main Content Start -->
     <main>
       <!-- Hero Section Start -->
       <section id="hero">
@@ -170,7 +184,7 @@
       <!-- Third Section Ends-->
 
       <!-- Fourth Section Begins -->
-      <div class="cover">
+      <div class="cover" id="cover">
         <h2>Testimonials</h2>
         <div class="scroll-images">
           <div class="child show">
@@ -290,7 +304,7 @@
         </div>
         <div>
           <button>Learn more</button>
-          <button>Request Demo <i class="fa fa-arrow-right"></i></button>
+          <a href="requestDemo.html"> Request Demo <i class="fa fa-arrow-right"></i></a>
         </div>
       </section>
 

@@ -16,16 +16,48 @@ body {
   background: linear-gradient(180deg, #f6fafd 0%, #ffffff 19.4%);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 main,
 nav,
 footer {
   padding: 20px 10%;
 }
 
+main {
+  padding-top: 60px;
+}
+
 nav#navBar {
   display: flex;
   flex-direction: row;
   height: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all .3s;
+}
+
+.nav-colored {
+  box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  background-color: white;
+}
+
+#navBarRes {
+  position: fixed;
+  top: -300px;
+  background-color: white;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 100;
+  box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  transition: all .3s;
+  transition: top .5s;
 }
 
 nav#navBar > #logo,
@@ -60,7 +92,7 @@ nav#navBar > #links {
   align-items: center;
 }
 
-nav#navBar > #links > li {
+nav#navBar > #links li, #navBarRes > #links li {
   color: var(--grey);
   transition: all 0.3s;
   font-weight: 500;
@@ -68,23 +100,39 @@ nav#navBar > #links > li {
   font-family: 'Avenir', 'Poppins', 'Poppins';
 }
 
-nav#navBar > #links > li:first-child {
+#navBarRes > #links li {
+  margin: 15px 0;
+}
+
+nav#navBar > #links li.active, #navBarRes > #links li.active {
   color: var(--dark_blue);
 }
 
-nav#navBar > #links > li:hover {
+nav#navBar > #links > li:hover, #navBarRes > #links li:hover {
   color: var(--dark_blue);
 }
 
 nav#navBar > #button {
-  width: 50%;
+  width: 35%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-nav#navBar > #button > button,
-footer > section:first-child button:last-child {
+a {
+  text-decoration: none;
+}
+
+#res {
+  display: none;
+}
+
+#res > #menuBar {
+  transition: all .3s;
+}
+
+nav#navBar > #button a,
+footer > section:first-child a:last-child, #navBarRes > #button a {
   all: unset;
   font-weight: 500;
   cursor: pointer;
@@ -98,14 +146,20 @@ footer > section:first-child button:last-child {
   justify-content: space-evenly;
   height: 60px;
   transform: scale(0.9);
+  background-color: white;
 }
 
-nav#navBar > #button > button:active {
+#navBarRes > #button a {
+    width: 200px;
+    margin-left: 20px;
+}
+
+nav#navBar > #button > a:active, #navBarRes > #button a:active {
   margin-top: 5px;
 }
 
-nav#navBar > #button > button > i,
-footer > section:first-child button:last-child > i {
+nav#navBar > #button > a > i, #navBarRes > #button > a > i,
+footer > section:first-child a:last-child > i {
   color: var(--purple);
   margin-top: 5px;
   margin-left: 20px;
@@ -738,6 +792,20 @@ footer span {
     display: none;
   }
 
+  #res {
+    width: 50%;
+    display: grid;
+    place-items: center;
+  }
+
+  #res i {
+    font-size: 20px;
+  }
+
+  nav#navBar > #button a {
+    display: none;
+  }
+
   nav#navBar {
     justify-content: space-between;
   }
@@ -923,7 +991,6 @@ footer span {
   }
 
   section#thirdSection > section {
-    height: 130vh;
     margin-bottom: 350px;
   }
 }

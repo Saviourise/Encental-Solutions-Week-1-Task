@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="requestDemo.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Request Demo | Save Your Storage Website</title>
+</head>
+<body>
+    <!-- Nav Bar Start -->
+    <nav id="navBar">
+      <div id="logo">
+        <div></div>
+        <div></div>
+      </div>
+      <ul id="links">
+        <a href="#tableSection"><li class="link active" onclick="linkChange(this)">View Data</li></a>
+        <a href="#formSection"><li class="link" onclick="linkChange(this)">Add Data</li></a>
+      </ul>
+      <div id="button">
+        <a href="index.html"> Go Home <i class="fa fa-arrow-left"></i></a>
+      </div>
+      <div id="res">
+        <i class="fa fa-bars" id="menuBar"></i>
+      </div>
+    </nav>
+    <nav id="navBarRes">
+      <ul id="links">
+        <a href="#tableSection"><li class="link active" onclick="linkChange(this)">Table</li></a>
+        <a href="#formSection"><li class="link" onclick="linkChange(this)">Add Data</li></a>
+      </ul>
+      <div id="button">
+        <a href="index.html"> Go Home <i class="fa fa-arrow-left"></i></a>
+      </div>
+    </nav>
+    <!-- Nav Bar End -->
+
+    <!-- Main Content Start -->
+    <main>
+      <!-- Table Section Start -->
+      <section id="tableSection">
+        <h1>Data Storage</h1>
+
+        <table id="data">
+            <thead>
+                <tr>
+            <th>ID</th>
+            <th>Item Name</th>
+            <th>Item Price</th>
+        </tr>
+            </thead>
+            <tbody id="dataTable">
+        
+        <tr>
+            
+        </tr>
+        
+        </tbody>
+        </table>
+      </section>
+      <!-- Table Section End -->
+
+      <!-- Form Section Starts -->
+
+      <section id="formSection">
+        <form onsubmit="submitForm(event)">
+            <fieldset>
+                <legend>Add Data to Data Storage</legend>
+                    <input type="text" disabled required id="id" placeholder="Id" />
+                    <input type="text" required id="name" placeholder="Item Name" oninput="check(this)" />
+                    <input type="number" required id="price" placeholder="Item Price" oninput="check(this)" />
+
+                    <input type="submit" />
+            </fieldset>
+        </form>
+      </section>
+
+      <!-- Form Section Ends-->
+
+    
+
+    </main>
+
+    <!-- Main Content End -->
+
+    <script src="requestDemo.js"></script>
+</body>
+</html>
