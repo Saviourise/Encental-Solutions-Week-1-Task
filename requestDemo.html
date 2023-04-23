@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="requestDemo.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="requestDemo.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -13,14 +13,11 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Request Demo | Save Your Storage Website</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Nav Bar Start -->
     <nav id="navBar">
       <div id="logo">
@@ -56,20 +53,16 @@
         <h1>Data Storage</h1>
 
         <table id="data">
-            <thead>
-                <tr>
-            <th>ID</th>
-            <th>Item Name</th>
-            <th>Item Price</th>
-        </tr>
-            </thead>
-            <tbody id="dataTable">
-        
-        <tr>
-            
-        </tr>
-        
-        </tbody>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Item Name</th>
+              <th>Item Price</th>
+            </tr>
+          </thead>
+          <tbody id="dataTable">
+            <tr></tr>
+          </tbody>
         </table>
       </section>
       <!-- Table Section End -->
@@ -78,25 +71,98 @@
 
       <section id="formSection">
         <form onsubmit="submitForm(event)">
-            <fieldset>
-                <legend>Add Data to Data Storage</legend>
-                    <input type="text" disabled required id="id" placeholder="Id" />
-                    <input type="text" required id="name" placeholder="Item Name" oninput="check(this)" />
-                    <input type="number" required id="price" placeholder="Item Price" oninput="check(this)" />
+          <fieldset>
+            <legend>Add Data to Data Storage</legend>
+            <input type="text" disabled required id="id" placeholder="Id" />
+            <input type="text" required id="name" placeholder="Item Name" oninput="check(this)" />
+            <input type="number" required id="price" placeholder="Item Price" oninput="check(this)" />
 
-                    <input type="submit" />
-            </fieldset>
+            <input type="submit" />
+          </fieldset>
         </form>
       </section>
 
       <!-- Form Section Ends-->
-
-    
-
     </main>
 
     <!-- Main Content End -->
+    <hr class="hr" />
+
+    <!-- Footer Section Start -->
+
+    <footer>
+      <section class="sec1">
+        <div>
+          <h1>Try for free!</h1>
+          <p>Get limited 1 week free try our features!</p>
+        </div>
+        <div>
+          <button>Learn more</button>
+          <a href="requestDemo.html"> Request Demo <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </section>
+
+      <section class="sec2">
+        <div>
+          <div>
+            <div id="logo">
+              <div></div>
+              <div></div>
+            </div>
+            <h2 class="dataware">DataWarehouse</h2>
+          </div>
+          <div>
+            <p class="address">Warehouse Society, 234 Bahagia Ave Street PRBW 29281</p>
+          </div>
+          <div><p class="info">info@warehouse.project</p></div>
+          <div><p class="info">1-232-3434 (Main)</p></div>
+        </div>
+        <div>
+          <h2>About</h2>
+          <ul>
+            <li>Profile</li>
+            <li>Features</li>
+            <li>Careers</li>
+            <li>DW News</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Help</h2>
+
+          <ul>
+            <li>Support</li>
+            <li>Sign Up</li>
+            <li>Guide</li>
+            <li>Reports</li>
+            <li>Q&A</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Social Media</h2>
+          <ul>
+            <li class="mediaicons">
+              <span><i class="fab fa-facebook"></i></span>
+              <span><i class="fab fa-twitter"></i></span>
+              <span><i class="fab fa-instagram"></i></span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="sec3">
+        <p>© Datawarehouse™, 2020. All rights reserved. Company Registration Number: 21479524.</p>
+        <!-- <p><i class="fa fa-comment-alt"></i></p> -->
+        <p>
+          <img
+            src="https://raw.githubusercontent.com/Saviourise/Encental-Solutions-Week-1-Task/ad99af2e3603ec171efbc504e0740a5cf7a9fa5b/icons/message.svg"
+            alt="Message"
+          /><span>...</span>
+        </p>
+      </section>
+    </footer>
+
+    <!-- Footer Section End -->
 
     <script src="requestDemo.js"></script>
-</body>
+  </body>
 </html>

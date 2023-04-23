@@ -7,8 +7,8 @@
   --dark-grey: #4b5d68;
 }
 
-@import url('https://fonts.cdnfonts.com/css/avenir');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.cdnfonts.com/css/avenir");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 body {
   margin: 0;
@@ -19,7 +19,6 @@ body {
 html {
   scroll-behavior: smooth;
 }
-
 
 main,
 nav,
@@ -40,7 +39,7 @@ nav#navBar {
   left: 0;
   width: 100%;
   z-index: 1000;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .nav-colored {
@@ -56,8 +55,8 @@ nav#navBar {
   padding: 20px 0;
   z-index: 100;
   box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
-  transition: all .3s;
-  transition: top .5s;
+  transition: all 0.3s;
+  transition: top 0.5s;
 }
 
 nav#navBar > #logo,
@@ -92,23 +91,26 @@ nav#navBar > #links {
   align-items: center;
 }
 
-nav#navBar > #links li, #navBarRes > #links li {
+nav#navBar > #links li,
+#navBarRes > #links li {
   color: var(--grey);
   transition: all 0.3s;
   font-weight: 500;
   cursor: pointer;
-  font-family: 'Avenir', 'Poppins', 'Poppins';
+  font-family: "Avenir", "Poppins", "Poppins";
 }
 
 #navBarRes > #links li {
   margin: 15px 0;
 }
 
-nav#navBar > #links li.active, #navBarRes > #links li.active {
+nav#navBar > #links li.active,
+#navBarRes > #links li.active {
   color: var(--dark_blue);
 }
 
-nav#navBar > #links > li:hover, #navBarRes > #links li:hover {
+nav#navBar > #links > li:hover,
+#navBarRes > #links li:hover {
   color: var(--dark_blue);
 }
 
@@ -128,15 +130,16 @@ a {
 }
 
 #res > #menuBar {
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 nav#navBar > #button a,
-footer > section:first-child a:last-child, #navBarRes > #button a {
+footer > section:first-child a:last-child,
+#navBarRes > #button a {
   all: unset;
   font-weight: 500;
   cursor: pointer;
-  font-family: 'Avenir', 'Poppins';
+  font-family: "Avenir", "Poppins";
   color: var(--dark_blue);
   padding: 0px 30px;
   box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
@@ -150,15 +153,17 @@ footer > section:first-child a:last-child, #navBarRes > #button a {
 }
 
 #navBarRes > #button a {
-    width: 200px;
-    margin-left: 20px;
+  width: 200px;
+  margin-left: 20px;
 }
 
-nav#navBar > #button > a:active, #navBarRes > #button a:active {
+nav#navBar > #button > a:active,
+#navBarRes > #button a:active {
   margin-top: 5px;
 }
 
-nav#navBar > #button > a > i, #navBarRes > #button > a > i,
+nav#navBar > #button > a > i,
+#navBarRes > #button > a > i,
 footer > section:first-child a:last-child > i {
   color: var(--purple);
   margin-top: 5px;
@@ -193,7 +198,7 @@ section#hero > article:first-child > h1 {
 section#hero > article:first-child > p {
   font-size: 18px;
   color: var(--dark-grey);
-  font-family: 'Avenir', 'Poppins';
+  font-family: "Avenir", "Poppins";
   margin-bottom: 60px;
   line-height: 160%;
   width: 400px;
@@ -205,7 +210,7 @@ footer > section:first-child button:first-child {
   background-color: var(--purple);
   font-weight: 500;
   cursor: pointer;
-  font-family: 'Avenir', 'Poppins';
+  font-family: "Avenir", "Poppins";
   border-radius: 50px;
   display: flex;
   align-items: center;
@@ -222,7 +227,7 @@ footer > section:first-child button:last-child:active {
 }
 
 section#hero > article:last-child {
-  background-image: url('https://raw.githubusercontent.com/Saviourise/Encental-Solutions-Week-1-Task/ad99af2e3603ec171efbc504e0740a5cf7a9fa5b/images/heroImg.svg');
+  background-image: url("https://raw.githubusercontent.com/Saviourise/Encental-Solutions-Week-1-Task/ad99af2e3603ec171efbc504e0740a5cf7a9fa5b/images/heroImg.svg");
   width: 60%;
   height: 30rem;
   background-repeat: no-repeat;
@@ -252,7 +257,7 @@ section#secondSection > article h1 {
 }
 
 section#secondSection > article p {
-  font-family: 'Avenir', 'Poppins';
+  font-family: "Avenir", "Poppins";
   font-weight: 500;
   font-size: 18px;
   color: var(--dark-grey);
@@ -277,7 +282,7 @@ section#thirdSection > article:first-child {
 
 section#thirdSection > article:first-child > h1 {
   color: var(--dark_blue);
-  font-family: 'Helvetica';
+  font-family: "Helvetica";
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -285,7 +290,7 @@ section#thirdSection > article:first-child > h1 {
 }
 
 section#thirdSection > article:first-child > p {
-  font-family: 'Avenir', 'Poppins';
+  font-family: "Avenir", "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -324,19 +329,19 @@ section#thirdSection > section > div > article {
 }
 
 article#searchDataArticle {
-  background-image: url('https://raw.githubusercontent.com/Saviourise/Encental-Solutions-Week-1-Task/ad99af2e3603ec171efbc504e0740a5cf7a9fa5b/images/Rectangle%2039.svg');
+  background-image: url("https://raw.githubusercontent.com/Saviourise/Encental-Solutions-Week-1-Task/ad99af2e3603ec171efbc504e0740a5cf7a9fa5b/images/Rectangle%2039.svg");
 }
 
 article#hoursArticle {
-  background-image: url('https://raw.githubusercontent.com/Saviourise/Encental-Solutions-Week-1-Task/ad99af2e3603ec171efbc504e0740a5cf7a9fa5b/images/Rectangle%2039%20(4).svg');
+  background-image: url("https://raw.githubusercontent.com/Saviourise/Encental-Solutions-Week-1-Task/ad99af2e3603ec171efbc504e0740a5cf7a9fa5b/images/Rectangle%2039%20(4).svg");
 }
 
 article#printArticle {
-  background-image: url('https://raw.githubusercontent.com/Saviourise/Encental-Solutions-Week-1-Task/ad99af2e3603ec171efbc504e0740a5cf7a9fa5b/images/Rectangle%2039%20(2).svg');
+  background-image: url("https://raw.githubusercontent.com/Saviourise/Encental-Solutions-Week-1-Task/ad99af2e3603ec171efbc504e0740a5cf7a9fa5b/images/Rectangle%2039%20(2).svg");
 }
 
 article#securityArticle {
-  background-image: url('https://raw.githubusercontent.com/Saviourise/Encental-Solutions-Week-1-Task/ad99af2e3603ec171efbc504e0740a5cf7a9fa5b/images/Rectangle%2039%20(3).svg');
+  background-image: url("https://raw.githubusercontent.com/Saviourise/Encental-Solutions-Week-1-Task/ad99af2e3603ec171efbc504e0740a5cf7a9fa5b/images/Rectangle%2039%20(3).svg");
 }
 
 section#thirdSection > section > div > article > div {
@@ -359,7 +364,7 @@ section#thirdSection > section > div > article > div:first-child > img {
 section#thirdSection > section > div > article > div > p {
   width: 220px;
   color: var(--dark-grey);
-  font-family: 'Avenir', 'Poppins';
+  font-family: "Avenir", "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -379,7 +384,7 @@ section#thirdSection > section > div > article > div > button {
   all: unset;
   font-weight: 800;
   cursor: pointer;
-  font-family: 'Avenir', 'Poppins';
+  font-family: "Avenir", "Poppins";
   color: var(--dark_blue);
   padding: 0px 30px 0px 0px;
   display: flex;
@@ -440,7 +445,7 @@ section#thirdSection > section > div > article > div > button > i {
 }
 
 .child > div > p:first-child {
-  font-family: 'Avenir', 'Poppins';
+  font-family: "Avenir", "Poppins";
   font-style: normal;
   font-weight: 900;
   font-size: 18px;
@@ -450,7 +455,7 @@ section#thirdSection > section > div > article > div > button > i {
 }
 
 .child > div > p:nth-child(2) {
-  font-family: 'Avenir', 'Poppins';
+  font-family: "Avenir", "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -461,7 +466,7 @@ section#thirdSection > section > div > article > div > button > i {
 
 .child > div > p:last-child {
   width: 230px;
-  font-family: 'Avenir', 'Poppins';
+  font-family: "Avenir", "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -548,7 +553,7 @@ section#thirdSection > section > div > article > div > button > i {
 }
 
 footer > section.sec1 p {
-  font-family: 'Avenir', 'Poppins';
+  font-family: "Avenir", "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -619,7 +624,7 @@ ul {
 }
 
 footer > section.sec2 h2 {
-  font-family: 'Avenir', 'Poppins';
+  font-family: "Avenir", "Poppins";
   color: var(--dark_blue);
   font-style: normal;
   font-weight: 900;
@@ -638,7 +643,7 @@ footer > section.sec2 h2:not(.dataware) {
 
 .address {
   width: 335px;
-  font-family: 'Avenir', 'Poppins';
+  font-family: "Avenir", "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -649,7 +654,7 @@ footer > section.sec2 h2:not(.dataware) {
 }
 
 .info {
-  font-family: 'Avenir', 'Poppins';
+  font-family: "Avenir", "Poppins";
   font-style: normal;
   font-weight: 100;
   font-size: 16px;
@@ -659,7 +664,7 @@ footer > section.sec2 h2:not(.dataware) {
 }
 
 footer li {
-  font-family: 'Avenir', 'Poppins';
+  font-family: "Avenir", "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -689,7 +694,7 @@ footer span {
 
 .sec3 > p:first-child {
   width: 360px;
-  font-family: 'Avenir', 'Poppins', 'Poppins';
+  font-family: "Avenir", "Poppins", "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -941,8 +946,8 @@ footer span {
   section#hero > article:first-child > button,
   footer > section:first-child button:first-child,
   nav#navBar > #button > button,
-  footer > section:first-child button:last-child {
-    font-size: 13px;
+  footer > section:first-child a:last-child {
+    font-size: 0.8rem;
   }
 
   nav#navBar > #button > button > i,
