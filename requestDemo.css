@@ -299,4 +299,9 @@ form input.typing:invalid {
   form fieldset {
     padding: 20px 10px;
   }
+
+  form input[type="text"],
+  form input[type="number"], legend {
+    font-size: 0.8rem;
+  }
 }
