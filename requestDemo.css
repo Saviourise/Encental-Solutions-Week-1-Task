@@ -131,6 +131,7 @@ a {
 
 #res > #menuBar {
   transition: all 0.3s;
+  color: var(--purple);
 }
 
 nav#navBar > #button a,
