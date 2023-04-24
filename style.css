@@ -483,6 +483,8 @@ section#thirdSection > section > div > article > div > button > i {
   width: 90px;
   height: 90px;
   margin-right: 50px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .cover {
@@ -947,6 +949,8 @@ footer span {
   .child img {
     margin-right: 20px;
     width: 50px;
+    margin-top: 10px;
+    height: 50px;
   }
 
   .show > div > p:last-child {
